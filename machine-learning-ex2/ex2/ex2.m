@@ -102,6 +102,7 @@ options = optimset('GradObj', 'on', 'MaxIter', 400);
 fprintf('Cost at theta found by fminunc: %f\n', cost);
 fprintf('Expected cost (approx): 0.203\n');
 fprintf('theta: \n');
+disp(theta);
 fprintf(' %f \n', theta);
 fprintf('Expected theta (approx):\n');
 fprintf(' -25.161\n 0.206\n 0.201\n');
