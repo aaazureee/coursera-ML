@@ -78,9 +78,6 @@ regularization = lambda / (2 * m) * (sum(sum(Theta1(:, 2:end) .^ 2)) + sum(sum(T
 J += regularization;
 
 % Implementing backprop algorithm
-Delta1 = zeros(size(Theta1));
-Delta2 = zeros(size(Theta2));
-
 delta3 = a3 - y_matrix; % 5000 x 10
 delta2 = delta3 * Theta2 .* [ones(m, 1) sigmoidGradient(z2)];  % 5000 x 26
 delta2 = delta2(:, 2:end); % 5000 x 25
